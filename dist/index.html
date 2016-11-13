@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>猫猫新闻</title>
+	<link rel="Shortcut Icon" href="./img/favicon.ico">
+	<link rel="stylesheet" href="plugin/ionic/css/ionic.min.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<header>
+	<div style="height: 100%;float: left;"><a href="#"><img src="img/logo.jpg" alt="猫猫新闻"><span style="position:absolute;font-size:20px">猫猫新闻</span></a></div>
+	<div style="float: right;">
+		<span class="ion-person"></span>
+	</div>
+</header>
+<nav>
+	<div class="row">
+	  <div class="col newsItem active">国内</div>
+	  <div class="col newsItem">财经</div>
+	  <div class="col newsItem">娱乐</div>
+	  <div class="col newsItem">体育</div>
+	  <div class="col newsItem">国际</div>
+	</div>
+	<div class="row">
+	  <div class="col newsItem">军事</div>
+	  <div class="col newsItem">汽车</div>
+	  <div class="col newsItem">游戏</div>
+	  <div class="col newsItem">科技</div>
+	  <div class="col newsItem">互联网</div>
+	</div>
+</nav>
+	<section style="width: 100%;">
+	</section>
+	<footer></footer>
+	<div class="scrollTop" style="display:none">
+		<span class="ion-ios-arrow-thin-up"></span>
+	</div>
+	<div class="loading" style="display:none">
+		<div>
+			<div class="load_list"></div>
+			<div class="load_list"></div>
+			<div class="load_list"></div>
+			<div class="load_list"></div>
+			<div class="load_list"></div>
+			<div class="load_list"></div>
+			<div class="load_list"></div>
+			<div class="load_list"></div>
+		</div>
+	</div>
+</body>
+<script src="plugin/jquery/jquery-2.1.1.min.js"></script>
+<script src="js/all.js"></script>
+<script>
+	(function(doc, win) {
+	        var docEl = doc.documentElement;
+	        resize = function() {
+	            var clientWidth = docEl.clientWidth;
+	            docEl.style.fontSize = 10 * (clientWidth / 412) + 'px';
+	        }
+	        win.addEventListener('resize', resize);
+	        win.addEventListener('DOMContentLoaded', resize);
+	        win.addEventListener('deviceready', resize);
+
+	    })(document, window);
+</script>
+</html>
