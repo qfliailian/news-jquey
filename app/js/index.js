@@ -2,7 +2,7 @@
 	// 获取函数封装
 	function getData(type,$page){
 		$.ajax({
-			url:'http://apis.baidu.com/showapi_open_bus/channel_news/search_news',
+			url:'https://apis.baidu.com/showapi_open_bus/channel_news/search_news',
 			headers:{
 				apikey:'5e7ac277afe4a93180724c96a31781ab'
 			},
